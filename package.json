@@ -1,0 +1,17 @@
+{
+  "name": "custom-storybook",
+  "version": "1.0.0",
+  "description": "Experimenting with customising Storybook",
+  "repository": "git@github.com:jrwebdev/custom-storybook.git",
+  "author": "jrwebdev <web@jravenscroft.co.uk>",
+  "license": "MIT",
+  "scripts": {
+    "start": "start-storybook -p 9001  -c .storybook"
+  },
+  "dependencies": {
+    "@storybook/react": "^3.3.14",
+    "babel-core": "^6.26.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
