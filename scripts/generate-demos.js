@@ -28,5 +28,5 @@ const generateContents = number => {
 Array.from(new Array(1000))
   .map((val, index) => generateContents(index + 1))
   .forEach((contents, index) =>
-    fs.writeFile(`src/Component${index + 1}.demo.js`)
+    fs.writeFile(`src/Component${index + 1}.demo.js`, contents)
   );
