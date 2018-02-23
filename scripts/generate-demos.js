@@ -6,13 +6,13 @@ const dedent = require('dedent');
 
 const componentName = index => `Component${padStart(index + 1, 4, '0')}`;
 
-const generateContents = number => {
+const generateContents = index => {
   const color = randomColor();
   return dedent`
     import * as React from 'react';
     import { storiesOf } from '@storybook/react';
     
-    storiesOf('Component${number}', module)
+    storiesOf('${componentName(index)}', module)
       .add('Example 1', () => (
         <div style={{ backgroundColor: '${color}' }}>Example 1</div>
       ))
@@ -32,7 +32,7 @@ const generateContents = number => {
 };
 
 range(1000)
-  .map((val, index) => generateContents(index + 1))
+  .map((val, index) => generateContents(index))
   .forEach((contents, index) =>
     fs.writeFile(`src/${componentName(index)}.demo.js`, contents)
   );
