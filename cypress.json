@@ -1,0 +1,6 @@
+{
+  "projectId": "test",
+  "videoRecording": false,
+  "trashAssetsBeforeHeadlessRuns": false,
+  "screenshotOnHeadlessFailure": false
+}

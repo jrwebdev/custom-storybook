@@ -6,11 +6,13 @@
   "author": "jrwebdev <web@jravenscroft.co.uk>",
   "license": "MIT",
   "scripts": {
-    "start": "start-storybook -p 9001  -c .storybook"
+    "start": "start-storybook -p 9001  -c .storybook",
+    "test:vr": "cypress run"
   },
   "dependencies": {
     "@storybook/react": "^3.3.14",
     "babel-core": "^6.26.0",
+    "cypress": "^2.0.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }
