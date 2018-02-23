@@ -8,7 +8,9 @@
   "scripts": {
     "start": "start-storybook -p 9001  -c .storybook",
     "build": "build-storybook -o dist/",
-    "test:vr": "jest"
+    "test:vr": "jest",
+    "generate": "node scripts/generate-demos",
+    "deploy": "aws s3 sync dist/ s3://example-storybook --acl public-read"
   },
   "dependencies": {
     "@storybook/react": "^3.3.14",

@@ -31,7 +31,12 @@ const generateContents = index => {
   `;
 };
 
-range(1000)
+const demoCount = process.argv[2] || 100;
+
+fs.rmdirSync('src');
+fs.mkdirSync('src');
+
+range(demoCount)
   .map((val, index) => generateContents(index))
   .forEach((contents, index) =>
     fs.writeFile(`src/${componentName(index)}.demo.js`, contents)
