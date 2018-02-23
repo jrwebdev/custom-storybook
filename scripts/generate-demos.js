@@ -14,13 +14,13 @@ const generateContents = number => {
       <div style={{ backgroundColor: '${color}' }}>Example 2</div>
     ))
     .add('Example 3', () => (
-      <div style={{ backgroundColor: '${color}' }}>Example 1</div>
+      <div style={{ backgroundColor: '${color}' }}>Example 3</div>
     ))
     .add('Example 4', () => (
-      <div style={{ backgroundColor: '${color}' }}>Example 2</div>
+      <div style={{ backgroundColor: '${color}' }}>Example 4</div>
     ))
     .add('Example 5', () => (
-      <div style={{ backgroundColor: '${color}' }}>Example 1</div>
+      <div style={{ backgroundColor: '${color}' }}>Example 5</div>
     ))
   `;
 };
