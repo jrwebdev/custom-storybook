@@ -6,12 +6,20 @@
   "author": "jrwebdev <web@jravenscroft.co.uk>",
   "license": "MIT",
   "scripts": {
-    "start": "start-storybook -p 9001  -c .storybook"
+    "start": "start-storybook -p 9001  -c .storybook",
+    "test:vr": "jest"
   },
   "dependencies": {
     "@storybook/react": "^3.3.14",
     "babel-core": "^6.26.0",
+    "jest": "^22.4.2",
+    "jest-environment-node": "^22.4.1",
+    "jest-image-snapshot": "^2.3.0",
+    "mkdirp": "^0.5.1",
+    "puppeteer": "^1.1.0",
+    "query-string": "^5.1.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "rimraf": "^2.6.2"
   }
 }

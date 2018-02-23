@@ -19,6 +19,8 @@ const storyUrls = getStorybook().reduce(
   []
 );
 
+window.storybookUrls = storyUrls;
+
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('storybook-stories').innerText = storyUrls.join(',');
 });
