@@ -33,7 +33,7 @@ const generateContents = index => {
 
 const demoCount = process.argv[2] || 100;
 
-fs.rmdirSync('src');
+fs.removeSync('src');
 fs.mkdirSync('src');
 
 range(demoCount)
