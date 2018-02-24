@@ -5,7 +5,8 @@ const request = require('request-promise');
 const Bottleneck = require('bottleneck');
 
 const serviceBaseUrl = 'http://localhost:5008/';
-const storybookBaseUrl = 'http://d1yltilqhv515f.cloudfront.net/';
+// const storybookBaseUrl = 'http://d1yltilqhv515f.cloudfront.net/';
+const storybookBaseUrl = 'http://localhost:3333/';
 
 let i = 0;
 const getImageFilename = () => `screenshots/image${i++}.png`;
