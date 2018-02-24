@@ -29,7 +29,7 @@ const run = async () => {
 
   console.log('screenshot count:', stories.length);
 
-  const limiter = new Bottleneck({ maxConcurrent: 10 });
+  const limiter = new Bottleneck({ maxConcurrent: 50 });
   const rateLimitedGetScreenshot = limiter.wrap(generateScreenshot);
 
   const screenshots = stories.map(rateLimitedGetScreenshot);
