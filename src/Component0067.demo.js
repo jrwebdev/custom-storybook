@@ -3,17 +3,17 @@ import { storiesOf } from '@storybook/react';
 
 storiesOf('Component0067', module)
   .add('Example 1', () => (
-    <div style={{ backgroundColor: '#aa3520' }}>Example 1</div>
+    <div style={{ backgroundColor: '#27bbce' }}>Example 1</div>
   ))
   .add('Example 2', () => (
-    <div style={{ backgroundColor: '#aa3520' }}>Example 2</div>
+    <div style={{ backgroundColor: '#27bbce' }}>Example 2</div>
   ))
   .add('Example 3', () => (
-    <div style={{ backgroundColor: '#aa3520' }}>Example 3</div>
+    <div style={{ backgroundColor: '#27bbce' }}>Example 3</div>
   ))
   .add('Example 4', () => (
-    <div style={{ backgroundColor: '#aa3520' }}>Example 4</div>
+    <div style={{ backgroundColor: '#27bbce' }}>Example 4</div>
   ))
   .add('Example 5', () => (
-    <div style={{ backgroundColor: '#aa3520' }}>Example 5</div>
+    <div style={{ backgroundColor: '#27bbce' }}>Example 5</div>
   ))
