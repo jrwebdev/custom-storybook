@@ -1,4 +1,4 @@
-console.time('run');
+console.time('generate-screenshots');
 
 const fs = require('fs-extra');
 const request = require('request-promise');
@@ -39,5 +39,5 @@ const run = async () => {
 run();
 
 process.on('beforeExit', () => {
-  console.timeEnd('run');
+  console.timeEnd('generate-screenshots');
 });
